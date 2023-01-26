@@ -1,0 +1,16 @@
+@font-face {
+    font-family: 'ubuntu-reg';
+    src: url('assets/fonts/FiraCode-Regular.ttf');
+}
+@font-face {
+    font-family: 'ubuntu-med';
+    src: url('assets/fonts/Ubuntu-Medium.ttf');
+}
+@font-face {
+    font-family: 'ubuntu-bold';
+    src: url('assets/fonts/Ubuntu-Bold.ttf');
+}
+@font-face {
+    font-family: 'ubuntu-light';
+    src: url('assets/fonts/Ubuntu-Light.ttf');
+}
