@@ -66,4 +66,7 @@
     .title__imgs{
         width: 350px;
     }
+    .title__imgs img{
+        height: 80%;
+    }
 }
