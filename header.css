@@ -1,0 +1,196 @@
+@import url(fonts.css);
+*,*::before,*::after{
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+html{
+    font-size: 62.5%;
+}
+:root{
+    --backgry: #F7F7F7;
+    --primaryGreen : #004743;
+    --primaryYellow: #FBD103;
+    --inputback : #E5E5E5E0;
+    --popuporange: #FF7D1E;
+    --secondaryGreen: #00bd4f;
+}
+.fashionName{
+    font-family: 'ubuntu-bold';
+    font-size: 2.1rem;
+    color: var(--primaryGreen);
+}
+.fashionName span{
+    color: var(--primaryYellow);
+}
+.head-section{
+    background-color: var(--backgry);
+    width: 100%;
+    height: auto;
+}
+.navbar{
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 1.5rem 0;
+    box-shadow: 0px 2px 2px rgba(213, 210, 210, 0.15);
+}
+.nav__menu{
+    width: 40%;
+}
+.nav__menu ul{
+    display: flex;
+    justify-content: space-around;
+    font-family: 'ubuntu-light';
+    font-size: 1.8rem;
+    line-height: 2.3rem;
+}
+.nav__menu ul li{
+    cursor: pointer;
+    transition: all ease 0.2s;
+    color: black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.nav__menu ul li:hover{
+    transform: translateY(-3px);
+    color: var(--primaryYellow);
+}
+.nav__menu ul li:hover:before{
+    content: '';
+    display: inline-block;
+    position: relative;
+    border-top: 2px solid var(--primaryGreen);
+    width: 10px;
+}
+.nav__search{
+    display: flex;
+    border-radius: 100rem;
+    width: 20%;
+}
+.search-icon{
+    background-color: var(--inputback);
+    width: 20%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 0 100rem 100rem 0;
+}
+.search-icon img{
+    width: 24px;
+    height: 24px;
+}
+.search{
+    width: 80%;
+    height: 40px;
+    background-color: var(--inputback);
+    outline: none;
+    border: none;
+    padding: 1rem 2rem;
+    border-radius: 100rem 0 0 100rem;
+}
+.search::placeholder{
+    color: rgba(0, 0, 0, 0.3);
+    font-family: 'ubuntu-light';
+    font-size: 1.4rem;
+}
+.nav__icons{
+    display: flex;
+    height: 20px;
+    column-gap: 1rem;
+}
+
+.nav__icons img{
+    cursor: pointer;
+}
+.toggler{
+    width: 25px;
+    height: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    display: none;
+}
+.bar{
+    width: 100%;
+    height: 2px;
+    background-color: var(--primaryGreen);
+    border-radius: 1rem;
+    transition: all ease 0.3s;
+}
+
+.toggler.OnToggler .bar:nth-child(1){
+    transform: translateY(8px) rotateZ(45deg);
+}
+.toggler.OnToggler .bar:nth-child(2){
+    transform: translateX(-100px);
+    opacity: 0;
+}
+.toggler.OnToggler .bar:nth-child(3){
+    transform: translateY(-5px) rotateZ(-45deg);
+}
+
+.head__title{
+    width: 80%;
+    display: flex;
+    margin: 0 auto;
+    padding: 3rem 0 0;
+}
+.title__imgs{
+    background-image: url(assets/images/image\ 4.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 500px;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.title__imgs img{
+    height: 100%;
+}
+.title__imgs img:nth-child(even){
+    transform: scale(1.1);
+    margin: 0 -5rem 0 -7rem;
+}
+.title__details{
+    width: calc(100%-500px);
+    display: flex;
+    flex-direction: column;
+    row-gap: 3rem;
+    justify-content: center;
+}
+.title__details span:nth-child(1){
+    font-family: 'ubuntu-light';
+    font-size: 2.5rem;
+    color: #7a7a7a;
+}
+.title__details span:nth-child(2){
+    font-family: 'ubuntu-med';
+    font-size: 6rem;
+    max-width: 60rem;
+    color: #323232;
+
+}
+.shopnowBtn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'ubuntu-bold';
+    border-radius: 100rem;
+    cursor: pointer;
+}
+.title__details a{
+    width: 22.4rem;
+    height: 7rem;
+    background-color: var(--primaryGreen);
+    font-size: 2rem;
+    color: #fff;
+}

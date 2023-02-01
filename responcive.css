@@ -4,6 +4,12 @@
     }
 }
 @media screen and (max-width:950px) {
+    .title__details span:nth-child(2){
+        font-size: 4rem;
+    }
+    .title__details span:nth-child(1){
+        font-size: 1.8rem;
+    }
     .toggler{
         display: flex;
         cursor: pointer;
@@ -39,6 +45,27 @@
         flex-direction: column;
         padding: 2rem 0;
     }
+    .quick-info{
+        width: 50%;
+        justify-content: center;
+    }
+    .quick-info i{
+        font-size: 3rem !important;
+    }
+    .preview__info{
+        row-gap: 3rem;
+    }
+    .collection__boys , .collection__girls{
+        width: 100% !important;
+    }
+    .baby__context > span{
+        font-size: 2.5rem !important;
+        text-align: center !important;
+    }
+    .babytransform{
+        width: 180px !important;
+        margin-left: 3rem !important;
+    }
 }
 @media screen and (max-width:800px) {
     .navbar{
@@ -68,5 +95,19 @@
     }
     .title__imgs img{
         height: 80%;
+    }
+}
+@media screen and (max-width: 461px){
+    .quick-info{
+        width: 100%;
+        box-shadow: 0px 2px 2px rgba(213, 210, 210, 0.15);
+        padding: 1rem 0;
+    }
+    .girls__photo , .boys__photo , .babiesContext img{
+        display: none;
+    }
+    .girls__context , .boys__context{
+        text-align: center !important;
+        align-items: center !important;
     }
 }
