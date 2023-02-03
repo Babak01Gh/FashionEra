@@ -5,10 +5,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="header.css">
+    <link rel="stylesheet" href="preview.css">
     <link rel="stylesheet" href="responcive.css">
     <link rel="icon" href="assets/images/icons8-shopping-cart-100.png">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
-    <link rel="stylesheet" href="preview.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
     <title>Fashion Era</title>
 </head>
 <body>
@@ -132,6 +133,130 @@
             </div>
         </div>
     </section>
+    <section class="arrivals">
+        <div class="arrivals--title">
+            <h2>New Arrivals</h2>
+            <p>Check out most promising product bought by our buyers</p>
+        </div>
+        <ul class="arrPro--filter">
+            <li><input type="radio" value="All" name="arrivalsType" id="all" class="filter">
+            <label for="all">All</label></li>
+            <li><input type="radio" value="Men" name="arrivalsType" id="men" class="filter"><label for="men">Men</label></li>
+            <li><input type="radio" value="Women" name="arrivalsType" id="women" class="filter"><label for="women">Women</label></li>
+            <li><input type="radio" value="Kids" name="arrivalsType" id="kids" class="filter"><label for="kids">Kids</label></li>
+        </ul>
+        <div class="swiper arrivals--products">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide"><div class="Product">
+                    <div class="proImg">
+                        <img src="assets/images/image 14.png" alt="image">
+                        <div class="proIcons">
+                            <span class="iconBack"><i class="fa-regular fa-heart"></i></span>
+                            <span class="iconBack"><i class="fa-solid fa-shopping-basket"></i></span>
+                            <span class="iconBack"><i class="fa-solid fa-image"></i></span>
+                        </div>
+                    </div>
+                    <div class="proInfo">
+                        <div class="proInfo--head">
+                            <span class="proType">Kids</span>
+                            <div class="stars">
+                                <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-regular fa-star"></i>
+                            </div>
+                        </div>
+                        <span class="proName">Yellow T-Shirt</span>
+                        <div class="proCount">
+                            <span>180$</span>
+                            <span>300$</span>
+                        </div>
+                    </div>
+                </div></div>
+                <div class="swiper-slide">
+                    <div class="Product">
+                        <div class="proImg">
+                            <img src="assets/images/image 15.png" alt="image">
+                            <div class="proIcons">
+                                <span class="iconBack"><i class="fa-regular fa-heart"></i></span>
+                                <span class="iconBack"><i class="fa-solid fa-shopping-basket"></i></span>
+                                <span class="iconBack"><i class="fa-solid fa-image"></i></span>
+                            </div>
+                        </div>
+                        <div class="proInfo">
+                            <div class="proInfo--head">
+                                <span class="proType">Women</span>
+                                <div class="stars">
+                                    <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-regular fa-star"></i>
+                                </div>
+                            </div>
+                            <span class="proName">Ethnic Kurti</span>
+                            <div class="proCount">
+                                <span>220$</span>
+                                <span>250$</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="Product">
+                        <div class="proImg">
+                            <img src="assets/images/image 17.png" alt="image">
+                            <div class="proIcons">
+                                <span class="iconBack"><i class="fa-regular fa-heart"></i></span>
+                                <span class="iconBack"><i class="fa-solid fa-shopping-basket"></i></span>
+                                <span class="iconBack"><i class="fa-solid fa-image"></i></span>
+                            </div>
+                        </div>
+                        <div class="proInfo">
+                            <div class="proInfo--head">
+                                <span class="proType">Women</span>
+                                <div class="stars">
+                                    <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-regular fa-star"></i>
+                                </div>
+                            </div>
+                            <span class="proName">Kurtis, Tunics & Tops</span>
+                            <div class="proCount">
+                                <span>280$</span>
+                                <span>350$</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="Product">
+                        <div class="proImg">
+                            <img src="assets/images/Mask Group.png" alt="">
+                            <div class="proIcons">
+                                <span class="iconBack"><i class="fa-regular fa-heart"></i></span>
+                                <span class="iconBack"><i class="fa-solid fa-shopping-basket"></i></span>
+                                <span class="iconBack"><i class="fa-solid fa-image"></i></span>
+                            </div>
+                        </div>
+                        <div class="proInfo">
+                            <div class="proInfo--head">
+                                <span class="proType">Men</span>
+                                <div class="stars">
+                                    <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-regular fa-star"></i>
+                                </div>
+                            </div>
+                            <span class="proName">Round Neck T-shirt</span>
+                            <div class="proCount">
+                                <span>120$</span>
+                                <span>150$</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="arrProBtn">
+                <div class="prevBtn">
+                    <i class="fa-solid fa-arrow-left"></i>
+                </div>
+                <div class="nextBtn">
+                    <i class="fa-solid fa-arrow-right"></i>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
     <script src="main.js"></script>
 </body>
 </html>
