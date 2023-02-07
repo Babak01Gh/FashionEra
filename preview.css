@@ -171,22 +171,29 @@
     justify-content: space-around;
     align-items: center;
 }
-.arrivals--title{
+.trending{
+    width: 80%;
+    margin: 3rem auto;
+}
+.arrivals--title , .trending--title{
     text-align: center;
     padding: 3rem 0;
 }
-.arrivals--title h2{
+.arrivals--title h2 , .trending--title h2{
     font-size: 4rem;
     font-family: 'ubuntu-bold';
     margin-bottom: 1rem;
 }
-.arrivals--title p{
+.arrivals--title p , .trending--title p{
     font-family: 'ubuntu-light';
     font-size: 1.5rem;
     color: #545454;
 }
-.arrivals--products{
+.arrivals--products , .trending--products{
     width: 100%;
+}
+.trending--products{
+    margin: 1rem 0;
 }
 .arrPro--filter{
     display: flex;

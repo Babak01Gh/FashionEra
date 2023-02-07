@@ -1,0 +1,47 @@
+.brands{
+    width: 70%;
+    margin: 5rem auto;
+    background-color: var(--primaryGreen);
+    display: flex;
+    flex-direction: column;
+    font-family: 'ubuntu-bold';
+    color: #fff;
+    align-items: center;
+    row-gap: 6rem;
+    padding: 3rem 2rem;
+    border-radius: 2rem;
+}
+.brands--logos{
+    width: 80%;
+    overflow: hidden;
+}
+.brands--head{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 1rem;
+    text-align: center;
+}
+.brands--head > span{
+    font-size: 4rem;
+}
+.brands--head p{
+    font-family: 'ubuntu-med';
+    font-size: 1.4rem;
+}
+.brands--head p span{
+    color: var(--primaryYellow);
+}
+.brand{
+    width: 150px;
+    height: 60px;
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 1rem;
+}
+.brand img{
+    width: 70%;
+    height: 80%;
+}

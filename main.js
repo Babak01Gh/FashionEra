@@ -32,3 +32,26 @@ const swiper = new Swiper('.swiper', {
         }
     }
   });
+
+const swiper1 = new Swiper('.swiper1', {
+    // Optional parameters
+    direction: 'horizontal',
+    loop: true,
+    breakpoints:{
+        1150:{
+            slidesPerView : 4
+        },
+        870:{
+            slidesPerView: 3
+        },
+        600:{
+            slidesPerView:2
+        },
+        else:{
+            slidesPerView:1
+        }
+    }
+  });
+
+const swiper1_ = document.querySelector('.swiper1').swiper;
+setInterval(()=>swiper1_.slideNext(),2000)
