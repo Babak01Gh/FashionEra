@@ -4,20 +4,21 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="header.css">
-    <link rel="stylesheet" href="preview.css">
-    <link rel="stylesheet" href="responcive.css">
-    <link rel="icon" href="assets/images/icons8-shopping-cart-100.png">
+    <link rel="stylesheet" href="Styles/header.css">
+    <link rel="stylesheet" href="Styles/preview.css">
+    <link rel="stylesheet" href="Styles/responcive.css">
+    <link rel="stylesheet" href="Styles/brands.css">
+    <link rel="icon" href="Styles/assets/images/icons8-shopping-cart-100.png">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
-    <link rel="stylesheet" href="brands.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
-    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <!-- <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" /> -->
+    <link rel="stylesheet" href="Styles/review-footer.css">
     <title>Fashion Era</title>
 </head>
 <body data-aos="zoom-in" data-aos-delay="300">
     <header class="head-section">
         <nav class="navbar">
-            <div class="fashionName">Fashion <span>Era</span></div>
+            <a class="fashionName" href="#">Fashion <span>Era</span></a>
             <div class="nav__menu">
                 <ul>
                     <a href="#"><li>Men</li></a>
@@ -49,9 +50,9 @@
                 <a class="shopnowBtn"href="#">Shop Now</a>
             </div>
             <div class="title__imgs">
-                <img src="assets/images/image 5.png" alt="">
-                <img src="assets/images/image 1.png" alt="">
-                <img src="assets/images/image 3.png" alt="">
+                <img src="assets/images/image 5.png" alt="woman">
+                <img src="assets/images/image 1.png" alt="woman">
+                <img src="assets/images/image 3.png" alt="woman">
             </div>
         </section>
     </header>
@@ -141,7 +142,7 @@
             <p>Check out most promising product bought by our buyers</p>
         </div>
         <ul class="arrPro--filter">
-            <li><input type="radio" value="All" name="arrivalsType" id="all" class="filter">
+            <li><input type="radio" value="All" name="arrivalsType" id="all" class="filter" checked="checked">
             <label for="all">All</label></li>
             <li><input type="radio" value="Men" name="arrivalsType" id="men" class="filter"><label for="men">Men</label></li>
             <li><input type="radio" value="Women" name="arrivalsType" id="women" class="filter"><label for="women">Women</label></li>
@@ -258,7 +259,7 @@
             </div>
         </div>
     </section>
-    <section class="brands" data-aos="fade-left">
+    <section class="brands" data-aos="fade-up">
         <div class="brands--head">
             <span>Top Brands Deal</span>
             <p>Up To <span>60%</span> off on brands</p>
@@ -408,12 +409,98 @@
                 </div>
             </div>
         </div>
-</section>  
+    </section>
+    <article class="reviews-container">
+        <div class="reviews">
+            <div class="review--title">
+                <span>
+                    Reviews
+                </span>
+                <p>This is what our customers have to say </p>
+            </div>
+            <div class="swiper2 review--slides">
+                    <img src="assets/images/costumer.png" alt="costumer" class="slide-img">
+                    <div class="swiper-wrapper text--slide">
+                        <div class="swiper-slide">
+                            <p class="textContent">
+                                There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum
+                            </p>
+                            <span class="textFrom">Babak Ghaffari</span>
+                        </div>
+                        <div class="swiper-slide">
+                            <p class="textContent">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate laboriosam aliquid suscipit cum nisi aperiam doloribus consectetur deserunt autem quae!
+                            </p>
+                            <span class="textFrom">PBG-1010</span>
+                        </div>
+                        <div class="swiper-slide">
+                            <p class="textContent">
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Explicabo, aut! Autem repudiandae sequi soluta vel, temporibus, ratione blanditiis nesciunt, sed incidunt delectus at nam impedit.
+                            </p>
+                            <span class="textFrom">Era Admin</span>
+                        </div>
+                    </div>
+                    <div class="reProBtn">
+                        <div class="prevBtn">
+                            <i class="fa-solid fa-arrow-left"></i>
+                        </div>
+                        <div class="nextBtn">
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </div>
+                    </div>
+            </div>
+        </div> 
+    </article>  
+    <footer>
+        <section class="connect-us">
+            <div class="connect--head">
+                <img src="assets/images/email.png" alt="email image">
+                <span>Subscibe Newsletter</span>
+                <p>Subscribe to our email and get updates right in your inbox</p>
+            </div>
+            <div class="connect--send-email">
+                <input class="emailBox" type="text" name="sendEmail" placeholder="Enter your Email">
+                <a class="email-sendIcon" href="mailto:someone@example.com"><i class="fa-regular fa-paper-plane"></i></a>
+            </div>
+            <div class="socialIcons">
+                <a class="socialBack" href="https://facebook.com" target="_blank"><i class="fa-brands fa-facebook-f"></i></a>
+                <a class="socialBack" href="https://twitter.com" target="_blank"><i class="fa-brands fa-twitter"></i></a>
+                <a class="socialBack" href="https://instagram.com" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+            </div>
+        </section>
+        <section class="footerLinks">
+            <div class="footerColumn">
+                <a class="fashionName" href="#">Fashion <span>Era</span></a>
+                <p>
+                    There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some,
+                </p>
+            </div>
+            <div class="footerColumn">
+                <span class="footCol-head"><a href="#">help</a></span>
+                <span><a href="#">Privacy Policy</a></span>
+                <span><a href="#">Shipping & Delivery</a></span>
+                <span><a href="#">Refund Policy</a></span>
+                <span><a href="#">Track Your Order</a></span>
+            </div>
+            <div class="footerColumn">
+                <span class="footCol-head"><a href="#">Store</a></span>
+                <span><a href="#">Men Fashion</a></span>
+                <span><a href="#">Women Fashion</a></span>
+                <span><a href="#">Kids Fashion</a></span>
+                <span><a href="#">Other</a></span>
+            </div>
+            <div class="footerColumn">
+                <span class="footCol-head"><a href="#">Support</a></span>
+                <span><a href="#">Feedback</a></span>
+                <span><a href="#">Contact us</a></span>
+                <span><a href="#">Download app</a></span>
+                <span><a href="#">Terms & condition</a></span>
+            </div>
+        </section>
+    </footer>
     <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
     <script src="main.js"></script>
-    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-    <script>
-      AOS.init();
-    </script>
+    <!-- <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>AOS.init();</script> -->
 </body>
 </html>

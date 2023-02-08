@@ -55,3 +55,20 @@ const swiper1 = new Swiper('.swiper1', {
 
 const swiper1_ = document.querySelector('.swiper1').swiper;
 setInterval(()=>swiper1_.slideNext(),2000)
+
+const swiper2 = new Swiper('.swiper2', {
+    // Optional parameters
+    direction: 'horizontal',
+    loop: true,
+  
+    // Navigation arrows
+    navigation: {
+      nextEl: '.nextBtn',
+      prevEl: '.prevBtn',
+    },
+    breakpoints:{
+        else:{
+            slidesPerView:1
+        }
+    }
+  });

@@ -1,0 +1,226 @@
+.reviews-container{
+    width: 100%;
+    background-color: var(--backgry);
+    padding: 4rem 0;
+}
+.reviews{
+    width: 65%;
+    margin: 0 auto;
+    text-align: center;
+}
+.review--title span , .connect--head span{
+    font-family: 'ubuntu-bold';
+    font-size: 4rem;
+}
+.review--title p , .connect--head p{
+    font-family: 'ubuntu-light';
+    font-size: 1.5rem;
+    opacity: 0.5;
+    margin-top: 1rem;
+}
+.review--slides{
+    width: 100%;
+    -webkit-clip-path: polygon(0 0, 100% 0, 90% 100%, 0% 100%); clip-path: polygon(0 0, 100% 0, 90% 100%, 0% 100%);
+    display: flex;
+    background-color: #fff;
+    border: 1px solid rgb(209, 209, 209);
+    border-radius: 2rem;
+    column-gap: 2rem;
+    overflow: hidden;
+    align-items: center;
+    margin-top: 2rem;
+    padding: 2rem 0;
+}
+.slide-img{
+    width: 250px;
+    height: 250px;
+}
+.text--slide{
+    margin-right: -30rem;
+    width: 75%;
+}
+.text--slide .swiper-slide{
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    width: 75%;
+    row-gap: 2rem;
+}
+.textContent{
+    font-family: 'ubuntu-light';
+    font-size: 1.7rem;
+    max-width: 50%;
+    opacity: 0.6;
+}
+.textFrom{
+    font-family: 'ubuntu-med';
+    font-size: 1.3rem;
+}
+.reProBtn{
+    display: flex;
+    height: 40px;
+    margin-bottom: -17rem;
+    gap: 1rem;
+}
+.reProBtn div{
+    width: 30px;
+    height: 30px;
+    z-index: 999;
+}
+@media screen and (max-width:950px){
+    .textContent{
+        font-size: 1.4rem ;
+        max-width: 50% ;
+    }
+    .slide-img{
+        width: 150px ;
+        height: 150px ;
+    }
+    .reProBtn{
+        margin-bottom: -14rem;
+    }
+    .text--slide{
+        margin-right: -23rem;
+    }
+}
+@media screen and (max-width:705px){
+    .textContent{
+        font-size: 1.4rem ;
+        max-width: 80% ;
+        text-align: center;
+    }
+    .slide-img , .reProBtn{
+        display: none;
+    }
+    .text--slide .swiper-slide{
+        align-items: center;
+    }
+}
+
+/* FOOTER */
+
+footer{
+    width: 80%;
+    margin: 0 auto;
+    padding: 5rem 0;
+}
+.connect-us , .connect--head{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    row-gap: 3rem;
+    padding: 3rem 0;
+}
+.connect--head{
+    row-gap: 0 !important;
+    padding: 0 !important;
+}
+.connect--head{
+    text-align: center;
+}
+.connect--head span{
+    font-size: 2.5rem;
+}
+.connect--head p{
+    font-size: 1.5rem;
+}
+.connect--send-email{
+    width: 50%;
+    background: var(--backgry);
+    height: 80px;
+    border-radius: 50rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    overflow: hidden;
+    padding: 1rem 1rem 1rem 2rem;
+}
+
+.emailBox{
+    outline: none;
+    border: none;
+    height: 100%;
+    width: 70%;
+    background-color: var(--backgry);
+}
+.connect--send-email a{
+    height: 100%;
+    width: 60px;
+    border-radius: 100%;
+    background-color: var(--primaryYellow);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    text-decoration: none;
+    color: #000;
+}
+.connect--send-email a i{
+    font-size: 2.5rem;
+    opacity: 0.8;
+}
+.socialIcons{
+    display: flex;
+    gap: 1rem;
+}
+.socialBack{
+    width: 40px;
+    height: 40px;
+    border-radius: 100%;
+    background-color: var(--backgry);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    color: #000;
+    text-decoration: none;
+}
+.socialBack i{
+    font-size: 1.5rem;
+}
+.footerLinks{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 2.5rem;
+}
+.footerColumn p{
+    max-width: 250px;
+    font-family: 'ubuntu-light';
+    font-size: 1.3rem;
+}
+.footerColumn{
+    display: flex;
+    flex-direction: column;
+    row-gap: 1rem;
+    font-family: 'ubuntu-med';
+}
+.footCol-head{
+    font-family: 'ubuntu-bold';
+    font-size: 1.5rem !important;
+}
+.footerColumn > span{
+    font-size: 1.3rem;
+    opacity: 0.9;
+}
+.footerColumn span a{
+    color: #000;
+}
+@media screen and (max-width:950px){
+    .footerLinks{
+        flex-direction: column;
+        align-items: center !important;
+        row-gap: 3.5rem;
+    }
+    .footerColumn{
+        align-items: flex-start;
+        margin: 0 auto;
+    }
+    .footerColumn > span{
+        min-width: 250px;
+    }
+    .connect--send-email{
+        width: 75%;
+    }
+}
